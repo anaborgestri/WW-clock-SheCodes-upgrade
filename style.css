@@ -1,0 +1,148 @@
+body {
+  background-color: #ebd5d5;
+  font-family: "Ubuntu", sans-serif;
+}
+h1 {
+  color: #685454;
+  text-align: center;
+  font-family: "Ubuntu", sans-serif;
+  margin-bottom: 20px;
+}
+h2 {
+  margin-bottom: 0px;
+}
+.container {
+  width: 600px;
+  background-color: whitesmoke;
+  display: block;
+  margin: 0 auto;
+  border-radius: 15px;
+  padding: 30px;
+  font-family: "Ubuntu", sans-serif;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+#cities-select {
+  width: 100%;
+  height: 50px;
+  background-color: #f2f2f2;
+  display: block;
+  margin: 0 auto;
+  padding: 0px 10px 0px 10px;
+  border-radius: 15px;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 1em;
+  color: #685454;
+  margin-bottom: 10px;
+}
+.time {
+  font-size: 36px;
+  font-weight: bold;
+}
+.time small {
+  font-size: 18px;
+  vertical-align: middle;
+}
+.date {
+  color: grey;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-style: italic;
+  text-align: left;
+  font-size: smaller;
+  line-height: 1cm;
+}
+.city-one-weather {
+  display: flex;
+  justify-content: space-between;
+}
+.weather-icon {
+  font-size: 40px;
+}
+.weather-temperature {
+  position: relative;
+  font-weight: bolder;
+  font-size: 30px;
+}
+.weather-temperature strong {
+  vertical-align: super;
+  font-size: 15px;
+}
+.weather-description {
+  text-transform: uppercase;
+  color: grey;
+  font-weight: bold;
+  font-size: 15px;
+  margin-top: -10px;
+}
+#current-city {
+  width: 100%;
+  max-height: 150px;
+  background-color: #f2f2f2;
+  display: block;
+  margin: 0 auto;
+  padding: 0px 10px 0px 10px;
+  border-radius: 15px;
+  font-family: "Ubuntu", sans-serif;
+}
+.city-current-details {
+  display: flex;
+  justify-content: space-between;
+  font-family: "Ubuntu", sans-serif;
+}
+#cityOne {
+  width: 100%;
+  max-height: 150px;
+  background-color: #f2f2f2;
+  display: block;
+  margin: 0 auto;
+  padding: 0px 10px 0px 10px;
+  border-radius: 15px;
+  font-family: "Ubuntu", sans-serif;
+}
+.city-one-details {
+  display: flex;
+  justify-content: space-between;
+  font-family: "Ubuntu", sans-serif;
+}
+#cityTwo {
+  width: 100%;
+  max-height: 150px;
+  background-color: #f2f2f2;
+  display: block;
+  margin: 0 auto;
+  padding: 0px 10px 0px 10px;
+  border-radius: 15px;
+  font-family: "Ubuntu", sans-serif;
+}
+.city-two-details {
+  display: flex;
+  justify-content: space-between;
+}
+#cityThree {
+  width: 100%;
+  max-height: 150px;
+  background-color: #f2f2f2;
+  display: block;
+  margin: 0 auto;
+  padding: 0px 10px 0px 10px;
+  margin-bottom: 10px;
+  border-radius: 15px;
+  font-family: "Ubuntu", sans-serif;
+}
+.city-three-details {
+  display: flex;
+  justify-content: space-between;
+}
+.backlink {
+  color: #685454;
+  text-align: center;
+  font-family: "Ubuntu", sans-serif;
+}
+.backlink:hover {
+  font-weight: bold;
+}
+footer {
+  padding: 10px;
+  text-align: center;
+  font-family: "Ubuntu", sans-serif;
+}

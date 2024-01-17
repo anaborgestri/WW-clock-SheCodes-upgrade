@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.30.1/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.44/moment-timezone-with-data-1970-2030.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>World Clock</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>World Clock</h1>
+      <select name="city" id="cities-select">
+        <option value="">Select a city</option>
+        <option value="Europe/Zurich">Zurich</option>
+        <option value="Europe/Lisbon">Lisbon</option>
+        <option value="America/New_York">New York</option>
+        <option value="America/Argentina/Buenos_Aires">Buenos Aires</option>
+      </select>
+      <div class="current-city">
+        <h2 id="current-city"></h2>
+        <div class="city-current-details">
+          <div class="city-current-weather">
+            <div class="weather-icon">
+              ☀️
+              <span class="weather-temperature">9<strong>°C</strong> </span>
+            </div>
+          </div>
+          <div class="city-current-time">
+            <div class="time" id="current-time"></div>
+            <div class="date" id="current-date"></div>
+          </div>
+        </div>
+        <div class="weather-description">clear sunshine</div>
+      </div>
+      <div class="cities">
+        <div id="cityOne">
+          <h2>Tokyo</h2>
+          <div class="city-one-details">
+            <div class="city-one-weather">
+              <div class="weather-icon">
+                ☀️
+                <span class="weather-temperature">9<strong>°C</strong> </span>
+              </div>
+            </div>
+            <div class="city-one-time">
+              <div class="time" id="onetime"></div>
+              <div class="date" id="onedate"></div>
+            </div>
+          </div>
+          <div class="weather-description">clear sunshine</div>
+        </div>
+        <div id="cityTwo">
+          <h2>Sao Paulo</h2>
+          <div class="city-two-details">
+            <div class="city-two-weather">
+              <div class="weather-icon">
+                ☀️
+                <span class="weather-temperature">9<strong>°C</strong> </span>
+              </div>
+            </div>
+            <div class="city-two-time">
+              <div class="time" id="twotime"></div>
+              <div class="date" id="twodate"></div>
+            </div>
+          </div>
+          <div class="weather-description">clear sunshine</div>
+        </div>
+        <div id="cityThree">
+          <h2>Barcelona</h2>
+          <div class="city-three-details">
+            <div class="city-three-weather">
+              <div class="weather-icon">
+                ☀️
+                <span class="weather-temperature">9<strong>°C</strong> </span>
+              </div>
+            </div>
+            <div class="city-three-time">
+              <div class="time" id="threetime"></div>
+              <div class="date" id="threedate"></div>
+            </div>
+          </div>
+          <div class="weather-description">clear sunshine</div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <footer>
+    Coded by
+    <a href="https://github.com/anaborgestri" target="_blank">Ana Borges</a> and
+    is in
+    <a href="https://github.com/anaborgestri/WW-clock-SheCodes" target="_blank"
+      >Github</a
+    >
+    and hosted with
+    <a href="https://main--unique-zabaione-b1b97f.netlify.app/" target="_blank"
+      >Netlify</a
+    >
+  </footer>
+  <script src="script.js"></script>
+</html>
