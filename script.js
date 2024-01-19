@@ -4,14 +4,14 @@ function refreshTime() {
   let currentTime = document.querySelector("#current-time");
   currentTime.innerHTML = moment().format("hh:mm:ss [<small>]A[</small>]");
   let currentDate = document.querySelector("#current-date");
-  currentDate.innerHTML = moment().format("D MMMM YYYY");
+  currentDate.innerHTML = moment().format("D/MMM/YYYY");
 
   let tokyoTime = document.querySelector("#onetime");
   tokyoTime.innerHTML = moment()
     .tz("Asia/Tokyo")
     .format("hh:mm:ss [<small>]A[</small>]");
   let tokyoDate = document.querySelector("#onedate");
-  tokyoDate.innerHTML = moment().tz("Asia/Tokyo").format("D MMMM YYYY");
+  tokyoDate.innerHTML = moment().tz("Asia/Tokyo").format("D/MMM/YYYY");
 
   let saopauloTime = document.querySelector("#twotime");
   saopauloTime.innerHTML = moment()
@@ -20,14 +20,14 @@ function refreshTime() {
   let saopauloDate = document.querySelector("#twodate");
   saopauloDate.innerHTML = moment()
     .tz("America/Sao_Paulo")
-    .format("D MMMM YYYY");
+    .format("D/MMM/YYYY");
 
-  let barcelonaTime = document.querySelector("#threetime");
-  barcelonaTime.innerHTML = moment()
+  let madridTime = document.querySelector("#threetime");
+  madridTime.innerHTML = moment()
     .tz("Europe/Madrid")
     .format("hh:mm:ss [<small>]A[</small>]");
-  let barcelonaDate = document.querySelector("#threedate");
-  barcelonaDate.innerHTML = moment().tz("Europe/Madrid").format("D MMMM YYYY");
+  let madridDate = document.querySelector("#threedate");
+  madridDate.innerHTML = moment().tz("Europe/Madrid").format("D MMMM YYYY");
 }
 refreshTime();
 setInterval(refreshTime, 1000);
@@ -41,10 +41,9 @@ function updateCity(event) {
   citiesElement.innerHTML = `<h2>${cityName}</h2>
           <div class="city-one-details">
             <div class="city-one-weather">
-              <div class="weather-icon">
-                ☀️
-                <span class="weather-temperature">9<strong>°C</strong> </span>
-              </div>
+              <div class="weather-icon" id="tokyo-icon">☀️</div>
+              <div class="weather-temperature" id="tokyo-weather">9</div>
+              <span class="weather-degrees"><strong>°C</strong></span>
             </div>
             <div class="city-one-time">
               <div class="time" id="onetime">${cityTime.format(
@@ -55,7 +54,7 @@ function updateCity(event) {
               )}</div>
             </div>
           </div>
-          <div class="weather-description">clear sunshine</div>
+           <div class="weather-description">clear sunshine</div>
       <div class="backlink"><a href="index.html">Back to all cities</a></div>`;
 }
 

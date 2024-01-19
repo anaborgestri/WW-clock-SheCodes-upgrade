@@ -1,41 +1,49 @@
 body {
-  background-color: #ebd5d5;
+  background-image: url("pexels-pixabay-41949.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
   font-family: "Ubuntu", sans-serif;
 }
 h1 {
-  color: #685454;
+  color: black;
   text-align: center;
   font-family: "Ubuntu", sans-serif;
-  margin-bottom: 20px;
+  margin: -5px 0px 25px 0px;
+  text-transform: uppercase;
+  font-weight: bolder;
+  font-size: 2.5em;
 }
 h2 {
   margin-bottom: 0px;
+  font-size: 2em;
+  padding: 10px;
 }
 .container {
   width: 600px;
-  background-color: whitesmoke;
+  background-color: rgba(245, 245, 245, 0.4);
   display: block;
   margin: 0 auto;
-  border-radius: 15px;
   padding: 30px;
   font-family: "Ubuntu", sans-serif;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 #cities-select {
-  width: 100%;
+  width: 103%;
   height: 50px;
-  background-color: #f2f2f2;
+  background-color: rgba(245, 245, 245, 0.4);
   display: block;
   margin: 0 auto;
   padding: 0px 10px 0px 10px;
-  border-radius: 15px;
   font-family: "Ubuntu", sans-serif;
   font-size: 1em;
-  color: #685454;
+  color: black;
   margin-bottom: 10px;
+  font-weight: bolder;
+  text-transform: uppercase;
+  letter-spacing: 0.5cap;
 }
 .time {
-  font-size: 36px;
+  font-size: 45px;
   font-weight: bold;
 }
 .time small {
@@ -43,12 +51,10 @@ h2 {
   vertical-align: middle;
 }
 .date {
-  color: grey;
   font-weight: bold;
   text-transform: uppercase;
-  font-style: italic;
-  text-align: left;
-  font-size: smaller;
+  text-align: center;
+  font-size: 20px;
   line-height: 1cm;
 }
 .city-one-weather {
@@ -69,20 +75,21 @@ h2 {
 }
 .weather-description {
   text-transform: uppercase;
-  color: grey;
+  color: rgb(95, 93, 93);
   font-weight: bold;
   font-size: 15px;
   margin-top: -10px;
+  padding: 0px 10px 20px 20px;
 }
 .current-city {
   width: 100%;
   max-height: 200px;
-  background-color: #f2f2f2;
+  background-color: rgba(245, 245, 245, 0.4);
   display: block;
   margin: 0 auto;
   padding: 0px 10px 0px 10px;
-  border-radius: 15px;
   font-family: "Ubuntu", sans-serif;
+  border-bottom-style: dashed;
 }
 .city-current-details {
   display: flex;
@@ -98,50 +105,60 @@ h2 {
 
 #cityOne {
   width: 100%;
-  max-height: 150px;
-  background-color: #f2f2f2;
+  max-height: 200px;
+  background-color: rgba(245, 245, 245, 0.4);
   display: block;
   margin: 0 auto;
   padding: 0px 10px 0px 10px;
-  border-radius: 15px;
   font-family: "Ubuntu", sans-serif;
+  border-bottom-style: dashed;
 }
 .city-one-details {
   display: flex;
   justify-content: space-between;
   font-family: "Ubuntu", sans-serif;
 }
+.city-one-weather {
+  display: flex;
+}
 #cityTwo {
   width: 100%;
-  max-height: 150px;
-  background-color: #f2f2f2;
+  max-height: 200px;
+  background-color: rgba(245, 245, 245, 0.4);
   display: block;
   margin: 0 auto;
   padding: 0px 10px 0px 10px;
-  border-radius: 15px;
   font-family: "Ubuntu", sans-serif;
+  border-bottom-style: dashed;
 }
 .city-two-details {
   display: flex;
   justify-content: space-between;
+  font-family: "Ubuntu", sans-serif;
+}
+.city-two-weather {
+  display: flex;
 }
 #cityThree {
   width: 100%;
-  max-height: 150px;
-  background-color: #f2f2f2;
+  max-height: 200px;
+  background-color: rgba(245, 245, 245, 0.4);
   display: block;
   margin: 0 auto;
   padding: 0px 10px 0px 10px;
-  margin-bottom: 10px;
-  border-radius: 15px;
   font-family: "Ubuntu", sans-serif;
+  border-bottom-style: dashed;
 }
 .city-three-details {
   display: flex;
   justify-content: space-between;
+  font-family: "Ubuntu", sans-serif;
+}
+.city-three-weather {
+  display: flex;
 }
 .backlink {
-  color: #685454;
+  color: white;
   text-align: center;
   font-family: "Ubuntu", sans-serif;
 }
@@ -152,4 +169,9 @@ footer {
   padding: 10px;
   text-align: center;
   font-family: "Ubuntu", sans-serif;
+  color: white;
+}
+a {
+  color: white;
+  text-decoration: none;
 }
