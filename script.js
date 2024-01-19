@@ -61,3 +61,21 @@ function updateCity(event) {
 
 let selectCity = document.querySelector("#cities-select");
 selectCity.addEventListener("change", updateCity);
+
+function showWeather(response) {
+  console.log(response.data);
+  let currentWeather = document.querySelector("#current-weather");
+  currentWeather.innerHTML = Math.round(response.data.temperature.current);
+  let icon = document.querySelector("#current-icon");
+  icon.innerHTML = `<img
+            src=${response.data.condition.icon_url}
+                      class="weather-icon"/> `;
+  let description = document.querySelector(".weather-description");
+  description.innerHTML = response.data.condition.description;
+}
+
+let city = moment.tz.guess().replace("_", " ").split("/")[1];
+//console.log(city);
+let apiKey = `4c08634eb8b52t7acf769o96f5812f64`;
+let apiUrl = `https://api.shecodes.io/weather/v1/current?query=${city}&key=${apiKey}`;
+axios.get(apiUrl).then(showWeather);

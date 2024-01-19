@@ -12,7 +12,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
-
+    <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
     <title>World Clock</title>
   </head>
   <body>
@@ -29,10 +29,9 @@
         <h2 id="current-city"></h2>
         <div class="city-current-details">
           <div class="city-current-weather">
-            <div class="weather-icon">
-              ☀️
-              <span class="weather-temperature">9<strong>°C</strong> </span>
-            </div>
+            <div class="weather-icon" id="current-icon">☀️</div>
+            <div class="weather-temperature" id="current-weather">9</div>
+            <span class="weather-degrees"><strong>°C</strong></span>
           </div>
           <div class="city-current-time">
             <div class="time" id="current-time"></div>
@@ -41,6 +40,7 @@
         </div>
         <div class="weather-description">clear sunshine</div>
       </div>
+
       <div class="cities">
         <div id="cityOne">
           <h2>Tokyo</h2>
