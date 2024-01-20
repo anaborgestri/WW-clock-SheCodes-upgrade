@@ -15,7 +15,7 @@ h1 {
 }
 h2 {
   margin-bottom: 0px;
-  font-size: 2em;
+  font-size: 2.2em;
   padding: 10px;
 }
 .container {
@@ -42,9 +42,15 @@ h2 {
   text-transform: uppercase;
   letter-spacing: 0.5cap;
 }
+#current-time {
+  font-size: 45px;
+  font-weight: bold;
+  margin-top: 0px;
+}
 .time {
   font-size: 45px;
   font-weight: bold;
+  margin-top: -25px;
 }
 .time small {
   font-size: 18px;
