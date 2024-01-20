@@ -161,6 +161,7 @@ h2 {
   color: white;
   text-align: center;
   font-family: "Ubuntu", sans-serif;
+  margin-top: 20px;
 }
 .backlink:hover {
   font-weight: bold;
